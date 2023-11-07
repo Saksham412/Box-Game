@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.background{
+    background-color: antiquewhite;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#stopBox{
+    height:120px;
+    width:120px;
+    border: 2px;
+    padding: 2px;
+    border:2px solid black;
+}
+#movingBox{
+    height: 120px;
+    width: 120px;
+    background-color: rgb(128, 128, 128);
+    animation-name: ani;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes ani {
+    from{
+        transform: translateX(-350px);
+        /* transform: translateX(-350px); */
+    }
+    to{
+        transform: translateX(350px);
+    }
+}
+.level{
+    background-color: skyblue;
+    width: 100%;
+    height: 70px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#easy,#medium,#hard{
+    background-color: rgb(202, 225, 176);
+    height:60px;
+    width: 60px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btns{
+    background-color: darkcyan;
+    width:100%;
+    height:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start{
+    background-color: rgb(1, 212, 1);
+    height:60px;
+    width: 60px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#stop{
+    background-color:rgb(218, 20, 20);
+    height:60px;
+    width: 60px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
